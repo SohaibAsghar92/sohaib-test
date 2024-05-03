@@ -5,7 +5,7 @@ interface Props {
 }
 
 const TableData: FC<Props> = ({ value }) => {
-  return <td className="border border-slate-700">{value}</td>;
+  return <td className="px-6 py-4">{value}</td>;
 };
 
 export default TableData;
