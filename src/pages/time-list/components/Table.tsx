@@ -46,10 +46,7 @@ const Table: FC<Props> = ({ data }) => {
         <tbody>
           {Object.entries(data["Time Series (Daily)"]).map(
             ([date, values], index) => (
-              <tr
-                key={index}
-                className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-              >
+              <tr key={index} className="bg-white dark:bg-gray-800">
                 <td className="border border-slate-700">{date}</td>
                 {tableKeys.map((tableKey, key) => {
                   const newKey: keyof IValues = `${
